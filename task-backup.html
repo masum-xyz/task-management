@@ -81,7 +81,7 @@
             </div>
         </div>
         <div id="Content"
-            class="flex flex-col bg-taskia-background-grey  w-full h-screen overflow-y-scroll p-[50px] gap-[30px]">
+            class="flex flex-col bg-taskia-background-grey rounded-l-[60px] w-full h-screen overflow-y-scroll p-[50px] gap-[30px]">
             <div class="dashboard-nav bg-white flex justify-between items-center w-full  p-4 rounded-[18px]">
                 <div
                     class="dashboard-search flex items-center p-[12px_20px] rounded-full border border-taskia-background-grey w-[400px] h-12 focus-within:ring-2 focus-within:ring-taskia-purple">
@@ -129,8 +129,91 @@
                 </div>
                 <!-- if task != 0 -->
                 <div class="flex flex-col gap-6" id="taskWrapper">
+                    <div class="flex justify-between bg-white p-5 w-full rounded-3xl">
+                        <div class="task-card flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <div
+                                    class="w-[50px] h-[50px] flex shrink-0 items-center justify-center bg-[#BDEBFF] rounded-full">
+                                    <img src="img/icons/ghost.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-bold text-lg leading-[27px]">Install Figma on Windows Server</p>
+                                    <p class="text-sm leading-[21px] text-taskia-grey">Created at 22 Agustus 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 font-semibold text-sm leading-[21px]">
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <img src="img/icons/layer.svg" alt="icon">
+                                    </div>
+                                    <p>High</p>
+                                </div>
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.29163 2.16663V18.8333" stroke="currentColor" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M4.29163 3.83337H13.625C15.875 3.83337 16.375 5.08337 14.7916 6.66671L13.7916 7.66671C13.125 8.33337 13.125 9.41671 13.7916 10L14.7916 11C16.375 12.5834 15.7916 13.8334 13.625 13.8334H4.29163"
+                                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p>In Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-3">
+                            <a href="#"
+                                class="my-auto font-semibold text-taskia-red border border-taskia-red p-[12px_20px] h-12 rounded-full">Delete</a>
+                            <a href="#"
+                                class="flex gap-[10px] justify-center items-center text-white p-[12px_20px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Complete</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between bg-white p-5 w-full rounded-3xl">
+                        <div class="task-card flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <div
+                                    class="w-[50px] h-[50px] flex shrink-0 items-center justify-center bg-[#BDEBFF] rounded-full">
+                                    <img src="img/icons/ghost.svg" alt="icon">
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-bold text-lg leading-[27px]">Install Figma on Windows Server</p>
+                                    <p class="text-sm leading-[21px] text-taskia-grey">Created at 22 Agustus 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 font-semibold text-sm leading-[21px]">
+                                <div class="flex gap-1 items-center">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <img src="img/icons/layer.svg" alt="icon">
+                                    </div>
+                                    <p>Medium</p>
+                                </div>
+                                <div class="flex gap-1 items-center text-taskia-green">
+                                    <div class="flex shrink-0 w-5 h-5">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.29163 2.16663V18.8333" stroke="currentColor" stroke-width="2"
+                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M4.29163 3.83337H13.625C15.875 3.83337 16.375 5.08337 14.7916 6.66671L13.7916 7.66671C13.125 8.33337 13.125 9.41671 13.7916 10L14.7916 11C16.375 12.5834 15.7916 13.8334 13.625 13.8334H4.29163"
+                                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <p>Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-x-3">
+                            <a href="#"
+                                class="my-auto font-semibold text-taskia-red border border-taskia-red p-[12px_20px] h-12 rounded-full">Delete</a>
+                            <a href="#"
+                                class="flex gap-[10px] justify-center items-center text-white p-[12px_20px] h-12 font-semibold bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey">Complete</a>
+                        </div>
+                    </div>
                 </div>
-
                 <div class="flex justify-center items-center h-[420px] mx-auto" id="taskWrapperEmpty">
                     <div
                         class="bg-white p-[30px] gap-[30px] rounded-[30px] w-[350px] shrink-0 flex flex-col items-center">
@@ -138,12 +221,14 @@
                             <img src="img/icons/note-favorite-dark-orange.svg" alt="icon">
                         </div>
                         <div class="flex flex-col gap-[10px] text-center">
-                            <p class="font-bold text-xl leading-[30px]">Tidak Ada Tugas</p>
+                            <p class="font-bold text-xl leading-[30px]">Oops! No Task</p>
                             <p class="text-sm text-taskia-grey leading-6">You need to create some tasks for<br>your
                                 employees to work on</p>
                         </div>
                         <div class="flex gap-2 w-full">
-                            <a href="add-task.html"
+                            <button
+                                class="p-[12px_20px] rounded-full border border-taskia-black w-full font-semibold">Import</button>
+                            <a href="dashboard-manage-task-add.html"
                                 class="p-[12px_20px] bg-gradient-to-b from-[#977FFF] to-[#6F4FFF] rounded-full w-full border border-taskia-background-grey font-semibold text-white text-center">Add
                                 New</a>
                         </div>
@@ -153,8 +238,6 @@
         </div>
     </section>
 
-    <script src="js/Task.js"></script>
-    <script src="js/manageTask.js"></script>
 </body>
 
 </html>
